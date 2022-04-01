@@ -1,6 +1,6 @@
 set Project     dft
 set Solution    solution1
-set Device      "xcu50-fsvh2104-2-e"
+set Device      "xcu280-fsvh2892-2l-e"
 set Flow        "vivado"
 set Clock       10
 
