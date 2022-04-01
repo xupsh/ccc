@@ -1,7 +1,7 @@
 
 # 作品提交
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2021年4月28日开放注册报名通道**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2022年5月5日开放注册报名通道**
 >请先注册
 >
 >注: 每队每天每题最多20次提交机会
@@ -29,9 +29,9 @@
 
 <!--## 作品提交的入口如下：-->
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2021年5月05日开放作品提交通道**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2022年5月05日开放作品提交通道**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2021年6月05日关闭作品提交通道**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2022年6月05日关闭作品提交通道**
 
 >
 >
