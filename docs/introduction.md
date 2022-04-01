@@ -10,7 +10,7 @@ Customized Computing Challeng (CCC 定制计算算法实现挑战赛) 由CCF 体
 
 # 竞赛日程
 
-![](./images/timeline2022.jpg)
+
 
 
 
