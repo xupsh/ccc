@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-set XPART xcu50-fsvh2104-2-e
+set XPART xcu280-fsvh2892-2l-e
 set CSIM 1
 set CSYNTH 1
 set COSIM 1
