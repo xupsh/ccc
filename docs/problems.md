@@ -12,7 +12,7 @@
   > CORDIC (for COordinate Rotation DIgital Computer) is a simple and efficient algorithm to calculate trigonometric functions, hyperbolic functions, square roots, multiplications, divisions, and exponentials and logarithms with arbitrary base, typically converging with one digit (or bit) per iteration.
 
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/cordic)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/cordic)
 
 
 2.DFT
@@ -21,7 +21,7 @@
 
 
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/DFT)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/DFT)
 
 #### CV （3题必做1题）
 
@@ -29,13 +29,13 @@
 
   > Features from accelerated segment test (FAST) is a corner detection method, which could be used to extract feature points and later used to track and map objects in many computer vision tasks. FAST corner detector uses a circle of 16 pixels (a Bresenham circle of radius 3) to classify whether a candidate point p is actually a corner. 
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/fast)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/fast)
 
 2.Harris
 
   > The Harris affine detector can identify similar regions between images that are related through affine transformations and have different illuminations. At a corner, the image intensity will change largely in multiple directions. Harris examines the changes of intensity due to shifts in a local window and uses the second moment matrix as the basis of its corner decisions.
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/harris)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/harris)
 
 3.Canny
 
@@ -45,7 +45,7 @@
   > + Apply double threshold to determine potential edges
   > + Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/canny)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/canny)
 
 
 ### 高级题 2题选1（不提供参考代码，5月15日后发布评测细节）
@@ -55,13 +55,13 @@
   > Betweenness is a graph analysis algorithm. It represents the degree to which nodes stand between each other. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that either the number of edges that the path passes through (for unweighted graphs) or the sum of the weights of the edges (for weighted graphs) is minimized. The betweenness centrality for each vertex is the number of these shortest paths that pass through the vertex.
   > A reference implementation of the betweenness calculation can be found at: [**reference**](https://gitenterprise.xilinx.com/qianqiao/ccc2021/blob/main/problems/betweenness/test.cpp#L84)
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/betweenness)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/betweenness)
 
 2.**Big Data:** Serialization
 
   > The serialization is usually used in the Big Data analysis to convert data into portable structure. It is the process of converting data object into a stream of bytes or binary format that is easy to transmit or store. The target serialized format is Arrow IPC defined in open-sourced Apache Arrow project and can be found in the following link: [**reference**](https://github.com/apache/arrow/blob/master/docs/source/format/Columnar.rst#serialization-and-interprocess-communication-ipc)
   >
-  > [**Details**](https://github.com/Jinyang-Guo/CCC/tree/main/problems/serialization)
+  > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/serialization)
 
 
 
