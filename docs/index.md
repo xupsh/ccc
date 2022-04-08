@@ -21,7 +21,7 @@ CCC2022决赛将于2022年7月底8月初举办
 
 欢迎关注CCC定制挑战赛公众号，获取更多信息
 
-<img src="./images/QR.jpg" width = "300" height = "200" alt="" align=center />
+![](./images/qr.jpg)
 
 
 
