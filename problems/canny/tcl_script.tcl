@@ -1,7 +1,7 @@
 set Project     canny
 set Solution    solution1
 set Device      "xcu280-fsvh2892-2l-e"
-set Flow        "vivado"
+set Flow        "vitis"
 set Clock       10
 
 open_project $Project -reset
