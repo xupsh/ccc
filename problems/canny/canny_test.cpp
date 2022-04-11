@@ -2,7 +2,6 @@
 
 #include "canny.hpp"
 
-using namespace cv;
 using namespace std;
 
 int main()
