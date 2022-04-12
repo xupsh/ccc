@@ -10,7 +10,7 @@ int main()
     int gold;
     int in;
     
-    int a = 0.1;
+    int a = 0.04;
 
     FILE * fp = fopen("src.txt","r");
     FILE * fpo = fopen("dst.txt","r");
