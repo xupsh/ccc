@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int tUpper = 80;
+    int tUpper = 64;
     int tLower = 30;
     
     int input[16384];
