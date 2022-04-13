@@ -18,7 +18,7 @@ set XPART xcu280-fsvh2892-2l-e
 set CSIM 1
 set CSYNTH 1
 set COSIM 1
-
+set Flow        "vitis"
 
 set PROJ "betweenness.prj"
 set SOLN "solution1"
@@ -35,7 +35,7 @@ add_files -tb "./data/data-csr-offset.mtx"
 add_files -tb "./data/data-csr-indicesweights.mtx"
 set_top dut
 
-open_solution -reset $SOLN
+open_solution -flow_target $Flow -reset $SOLN
 
 
 
