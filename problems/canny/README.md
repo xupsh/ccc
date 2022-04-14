@@ -9,7 +9,7 @@
 ├── tcl_script.tcl    //tcl文件
 └── README.md         //说明文件
 ```
-## harris
+## canny
 
   1）	框架代码说明
   >框架代码是算法的C-model，您需要自行设计可综合co-sim的设计。  
