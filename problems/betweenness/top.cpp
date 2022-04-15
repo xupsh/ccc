@@ -36,15 +36,6 @@ void dut(unsigned numVert,
 #pragma HLS INTERFACE m_axi offset = slave latency = 32 num_write_outstanding = 1 num_read_outstanding = \
     16 max_write_burst_length = 2 max_read_burst_length = 256 bundle = gmem9 port = tmp3 depth = MEMSIZE
 
-#pragma HLS INTERFACE s_axilite port = offset bundle = control
-#pragma HLS INTERFACE s_axilite port = column bundle = control
-#pragma HLS INTERFACE s_axilite port = btwn bundle = control
-#pragma HLS INTERFACE s_axilite port = tmp0 bundle = control
-#pragma HLS INTERFACE s_axilite port = tmp1 bundle = control
-#pragma HLS INTERFACE s_axilite port = tmp2 bundle = control
-#pragma HLS INTERFACE s_axilite port = tmp3 bundle = control
-#pragma HLS INTERFACE s_axilite port = return bundle = control
-
 // clang-format on
 #ifndef __SYNTHESIS__
     for (int i = 0; i < numVert; i++) {
