@@ -14,7 +14,7 @@
   >但请注意：**您必须保持顶层函数不变。**
 
   2）项目要求  
-  >在设计完成后，您可以使用我们提供的cordiccart2pol_test.cpp文件进行基本功能测试。但是，由于在评分时会统一使用评分系统内部的cordiccart2pol_test.cpp，因此请不要将设计写在cordiccart2pol_test.cpp中，cordiccart2pol_test.cpp文件也无需提交。
+  >在设计完成后，您可以使用我们提供的cordiccart2pol_test.cpp文件进行基本功能测试。但是，由于在评分时会统一使用评分系统内部的cordiccart2pol.h和cordiccart2pol_test.cpp，因此请不要将设计写在cordiccart2pol.h和cordiccart2pol_test.cpp中，cordiccart2pol.h和cordiccart2pol_test.cpp文件也无需提交。如果您有修改头文件的需求，您可以在设计中添加文件名不为cordiccart2pol.h的头文件。
   
   >**在HLS优化的过程中，请务必将优化指令设置为pragma写入c++代码中。**
   
