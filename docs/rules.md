@@ -3,7 +3,7 @@
 
 ## **1. 报名规则**: 
 + 每队**不超过2人**，可跨单位组建
-<a href="https://xupsh.github.io/ccc2021/upload.html"><font size="6" ><strong>点击报名</strong></font></a>
+<a href="http://118.31.189.183:8008/"><font size="6" ><strong>点击报名</strong></font></a>
 + 本科生，研究生，已工作不限  
   
 ## **2.挑战规则**
