@@ -19,12 +19,12 @@
   > 
   > 4）评分规则
   > 
-  >  >•正确序列化fix_size数据类型的输入，如int32，记1分；
+  >  >•正确序列化fix_size数据类型的输入，如int32，mark_fix=1；
   > >
-  >   >•正确序列化variable_size数据类型的输入，如string，记1分；
+  >   >•正确序列化variable_size数据类型的输入，如string，mark_var=1；
   > >
-  >  >•正确序列化fix/variable_size混合数据类型的输入， 记1分；
+  >  >•正确序列化fix/variable_size混合数据类型的输入，mark_mix=1；
   > >
-  >   >•记录运行各类型输入的时间 t_fix，t_var，t_mix；
+  >   >•没有正确序列化对应mark_*是0，记录运行各类型输入的时间 t_fix，t_var，t_mix；
   > >
-  >  >•mark = 1/t_fix + 1/t_var + 1/t_mix。
+  >  >•final_mark=mark_fix/t_fix + mark_var/t_var + mark_mix/t_mix。
