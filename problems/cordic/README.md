@@ -12,11 +12,13 @@
 ## CORDIC
 
 1. 框架代码说明
+
     框架代码是算法的C-model，
     您需要自行设计可综合co-sim的设计。  
     但请注意：**您必须保持顶层函数结构兼容。**
 
-2. 项目要求  
+2. 项目要求
+ 
     在设计完成后，
     您可以使用我们提供的 `cordiccart2pol_test.cpp` 文件进行基本功能测试。
     但是，由于在评分时会统一使用评分系统内部的 `cordiccart2pol_test.cpp` ，
@@ -25,11 +27,13 @@
     比赛不需要生成最终bit文件，仅考察算法实现功能和综合报告的性能，能完成co-sim即可。
 
 3. 算法说明
+
     CORDIC(用于坐标旋转数字计算机)是一种简单而有效的算法，
     用于计算三角函数、双曲函数、平方根、乘法、除法、指数和任意底数的对数。
     本题选手们需完成坐标系变换的硬件实现。
 
 4. 函数原型
+
     ```c++
     void cordiccart2pol(data_t x, data_t y, data_t *r, data_t *theta)
     ```
@@ -51,6 +55,7 @@
     </div>
 
 5. 提交程序
+
     您仅需提交cpp文件和h文件。
     请将除 `cordiccart2pol_test.cpp` 以外的所有cpp和h文件
     压缩为一个压缩包 `cordiccart2pol.zip` ，
@@ -60,6 +65,7 @@
 
   
 6. 评分规则
+
     - 如果最大频率![](https://render.githubusercontent.com/render/math?math=F_{max}<100\MHz)， 视为未通过基本功能
 
     - 如果最大频率![](https://render.githubusercontent.com/render/math?math=100\MHz%20\le%20F_{max}<300\MHz)，使用下列公式计算性能
