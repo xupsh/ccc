@@ -12,11 +12,13 @@
 ## FAST
 
 1. 框架代码说明
-框架代码是算法的C-model，
-您需要自行设计可综合co-sim的设计。  
-但请注意：**您必须保持顶层函数不变。**
 
-2. 项目要求  
+    框架代码是算法的C-model，
+    您需要自行设计可综合co-sim的设计。  
+    但请注意：**您必须保持顶层函数不变。**
+
+2. 项目要求
+
     在设计完成后，
     您可以使用我们提供的`fast_test.cpp`文件进行基本功能测试。
     但是，由于在评分时会统一使用评分系统内部的`fast_test.cpp`，
@@ -26,6 +28,7 @@
     比赛不需要生成最终bit文件，仅考察算法实现功能和综合报告的性能，能完成co-sim即可。
 		
 3. 算法说明
+
     特征加速分割测试(Featuresfrom Accelerated Segment Test, FAST)是一种角点检测方法，
     可用于提取特征点，并用于许多计算机视觉任务中的目标跟踪。
     FAST角点检测器使用一个16像素的圆(半径为3的Bresenham圆)来区分候选点是否为角点。
@@ -70,6 +73,7 @@
     </div>
 
 5. 提交程序
+
     您仅需提交cpp文件和h文件。
     请将除`fast_test.cpp`以外的所有cpp和h文件
     压缩为一个压缩包`fast.zip`，
@@ -78,6 +82,7 @@
     延迟、面积等性能指标则可在历史提交记录中点击版本号详细查看。
   
 6. 评分规则
+
     - 如果最大频率![](https://render.githubusercontent.com/render/math?math=F_{max}<100\MHz)， 视为未通过基本功能
 
     - 如果最大频率![](https://render.githubusercontent.com/render/math?math=100\MHz%20\le%20F_{max}<300\MHz)，使用下列公式计算性能
