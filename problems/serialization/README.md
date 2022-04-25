@@ -19,6 +19,8 @@
   > 
   > 4）评分规则
   > 
+  > fix/var/mix 分别对应三种数据输入，*.obj 为testbench输入数据， *.arrow 为testbench的真值数据，*.csv和*.schema 分别是数据的原始值和数据类型定义。
+  > 
   >  >•正确序列化fix_size数据类型的输入，如int32，mark_fix=1；
   > >
   >   >•正确序列化variable_size数据类型的输入，如string，mark_var=1；
