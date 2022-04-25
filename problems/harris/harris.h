@@ -1,2 +1,4 @@
 
-void harris(int* imgSrc, int* imgDst, double alpha);
+typedef int DTYPE;
+
+void harris(DTYPE* imgSrc, DTYPE* imgDst, double alpha);
