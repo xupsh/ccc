@@ -1,4 +1,4 @@
-## •Serialization
+## Serialization
 
 1）	框架代码说明
 
