@@ -2,7 +2,9 @@
 
 using namespace std;
 
-void canny(int* src, int* dst, int upperThresh, int lowerThresh)
+#include "canny.hpp"
+
+void canny(DTYPE* src, DTYPE* dst, int upperThresh, int lowerThresh)
 {
     //Write your code here
 }

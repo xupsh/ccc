@@ -2,4 +2,6 @@
 
 using namespace std;
 
-void canny(int* src, int* dst, int upperThresh, int lowerThresh);
+typedef int DTYPE;
+
+void canny(DTYPE* src, DTYPE* dst, int upperThresh, int lowerThresh);

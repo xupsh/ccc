@@ -9,8 +9,8 @@ int main()
     int tUpper = 80;
     int tLower = 30;
     
-    int input[16384];
-    int output[16384];
+    DTYPE input[16384];
+    DTYPE output[16384];
     int gold;
     int in;
  
