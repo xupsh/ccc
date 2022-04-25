@@ -1,3 +1,0 @@
-Integers_A: int64
-Integers_B: int64
-Doubles: double
