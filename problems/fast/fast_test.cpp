@@ -10,8 +10,8 @@ using namespace std;
 
 int main()
 {
-    int input[16384];
-    int output[16384];
+    DTYPE input[16384];
+    DTYPE output[16384];
     int gold;
     int in;
 
