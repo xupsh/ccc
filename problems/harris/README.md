@@ -84,7 +84,7 @@
     4. 计算每个像素的Harris响应值![](https://render.githubusercontent.com/render/math?math=R)
 
         <div align="center">
-        <img src="https://render.githubusercontent.com/render/math?math=\huge%20R=\det(M)-\alpha\cdot\tr(M)">
+        <img src="https://render.githubusercontent.com/render/math?math=\huge%20R=\det(M)-\alpha\cdot\tr(M)^2">
         </div>  
         
         公式中![](https://render.githubusercontent.com/render/math?math=\det)为方阵的行列式，![](https://render.githubusercontent.com/render/math?math=\tr)为矩阵的迹，具体可参考矩阵相关内容
