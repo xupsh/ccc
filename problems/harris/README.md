@@ -57,7 +57,9 @@
     <div align="center">
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20\begin{matrix}%200%26255%260%260%260%260%260%260%260%260%260%26255%260%260%260%260\end{matrix}">
     </div>
-
+    
+    本题在使用滤波器前一律进行0填充，使得滤波后的图像和滤波前大小一致。
+    
     关于harris算法本身，以下为算法5个主要步骤的大致介绍：
   
     1. 使用Sobel算子计算图像![](https://render.githubusercontent.com/render/math?math=I(x,y))在X和Y两个方向的梯度![](https://render.githubusercontent.com/render/math?math=I_x)和![](https://render.githubusercontent.com/render/math?math=I_y)，其分别为：
