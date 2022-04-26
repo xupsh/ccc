@@ -64,7 +64,7 @@
         
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20I_x=\begin{bmatrix}-1%260%26%2B1\\-2%260%26%2B2\\-1%260%26%2B1\end{bmatrix},">
-        <img src="https://render.githubusercontent.com/render/math?math=\huge%20I_y=\begin{bmatrix}%2B1%26%2B2%26%2B1\\0%260%260\\-1%26-2%26-1\end{bmatrix}">
+        <img src="https://render.githubusercontent.com/render/math?math=\huge%20I_y=\begin{bmatrix}-1%26-2%26-1\\0%260%260\\%2B-1%26%2B-2%26%2B-1\end{bmatrix}">
         </div>
 
         其计算结果记作![](https://render.githubusercontent.com/render/math?math=G_x)和![](https://render.githubusercontent.com/render/math?math=G_y)
