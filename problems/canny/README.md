@@ -58,6 +58,8 @@
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20\begin{matrix}%200%26255%260%260%260%260%260%260%260%260%260%26255%260%260%260%260\end{matrix}">
     </div>
 
+    本题在使用滤波器前一律进行0填充，使得滤波后的图像和滤波前大小一致。
+
     关于canny算法本身，以下为算法4个主要步骤的大致介绍：
 
     1.使用![](https://render.githubusercontent.com/render/math?math=3\times3)的高斯滤波来平滑图像，标准差![](https://render.githubusercontent.com/render/math?math=\sigma)=1.5。
