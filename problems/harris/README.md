@@ -78,7 +78,7 @@
     3. 使用![](https://render.githubusercontent.com/render/math?math=3\times3)的Box Filter（方框滤波）
        
        <div align="center">
-       <img src="https://render.githubusercontent.com/render/math?math=\huge%20B=\begin{bmatrix}1%261%26%2B1\\1%261%26%2B1\\1%261%26%2B1\end{bmatrix},">
+       <img src="https://render.githubusercontent.com/render/math?math=\huge%20B=\frac{1}{9}\begin{bmatrix}1%261%261\\1%261%261\\1%261%261\end{bmatrix},">
        </div>
        
        对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并生成矩阵M。
