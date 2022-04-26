@@ -75,7 +75,7 @@
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20G_{xy}=G_xG_y">
         </div>        
   
-    3. 使用Box Filter（方框滤波）对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并生成矩阵M。
+    3. 使用![](https://render.githubusercontent.com/render/math?math=3\times3)的Box Filter（方框滤波）对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并生成矩阵M。
 
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20M=\begin{bmatrix}G_x^2%26G_{xy}\\G_{xy}%26G_y^2\end{bmatrix}">
