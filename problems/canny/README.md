@@ -67,7 +67,7 @@
     Sobel的X方向和Y方向上的算子![](https://render.githubusercontent.com/render/math?math=I_x)和![](https://render.githubusercontent.com/render/math?math=I_y)分别为：
     <div align="center">
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20I_x=\begin{bmatrix}-1%260%26%2B1\\-2%260%26%2B2\\-1%260%26%2B1\end{bmatrix},">
-    <img src="https://render.githubusercontent.com/render/math?math=\huge%20I_y=\begin{bmatrix}%2B1%26%2B2%26%2B1\\0%260%260\\-1%26-2%26-1\end{bmatrix}">
+    <img src="https://render.githubusercontent.com/render/math?math=\huge%20I_y=\begin{bmatrix}1%262%261\\0%260%260\\%2B1%26%2B2%26%2B1\end{bmatrix}">
     </div>
 
     则图像某点X方向梯度![](https://render.githubusercontent.com/render/math?math=G_x)、Y方向梯度![](https://render.githubusercontent.com/render/math?math=G_y)和梯度强度![](https://render.githubusercontent.com/render/math?math=G)之间满足
