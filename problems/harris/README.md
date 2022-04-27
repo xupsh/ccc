@@ -58,7 +58,7 @@
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20\begin{matrix}%200%26255%260%260%260%260%260%260%260%260%260%26255%260%260%260%260\end{matrix}">
     </div>
     
-    本题在使用滤波器前一律进行0填充，使得滤波后的图像和滤波前大小一致。
+    **本题在使用滤波器前一律进行0填充，使得滤波后的图像和滤波前大小一致。**
     
     关于harris算法本身，以下为算法5个主要步骤的大致介绍：
   
@@ -71,7 +71,7 @@
 
         其计算结果记作![](https://render.githubusercontent.com/render/math?math=G_x)和![](https://render.githubusercontent.com/render/math?math=G_y)
         
-    2. 计算图像两个方向梯度的乘积![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)，并对得到的![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)均右移6位。
+    2. 计算图像两个方向梯度的乘积![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)，并对得到的![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)均**右移6位**。
 
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20G_{xy}=G_xG_y">
@@ -83,7 +83,7 @@
        <img src="https://render.githubusercontent.com/render/math?math=\huge%20B=\frac{1}{9}\begin{bmatrix}1%261%261\\1%261%261\\1%261%261\end{bmatrix},">
        </div>
        
-       对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并对滤波后得到的![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})均右移2位，生成矩阵M。
+       对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并对滤波后得到的![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})均**右移2位**，生成矩阵M。
 
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20M=\begin{bmatrix}G_x^2%26G_{xy}\\G_{xy}%26G_y^2\end{bmatrix}">
@@ -98,7 +98,7 @@
         公式中![](https://render.githubusercontent.com/render/math?math=\det)为方阵的行列式，![](https://render.githubusercontent.com/render/math?math=\tr)为矩阵的迹，具体可参考矩阵相关内容
         其中参数![](https://render.githubusercontent.com/render/math?math=\alpha=0.04)，并对![](https://render.githubusercontent.com/render/math?math=R\le%20442)的值置为零。
   
-    5. 在3×3的邻域内进行非最大值抑制，若一个非边界点的R值大于其上、下、左、右四点的R值，则该点为局部最大值点，即为图像中的角点。 
+    5. 进行非最大值抑制，若一个**非边界点**的R值大于其上、下、左、右四点的R值，则该点为局部最大值点，即为图像中的角点。 
 
 5. 提交程序
 
