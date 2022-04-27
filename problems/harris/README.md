@@ -98,7 +98,7 @@
         公式中![](https://render.githubusercontent.com/render/math?math=\det)为方阵的行列式，![](https://render.githubusercontent.com/render/math?math=\tr)为矩阵的迹，具体可参考矩阵相关内容
         其中参数![](https://render.githubusercontent.com/render/math?math=\alpha=0.04)，并对![](https://render.githubusercontent.com/render/math?math=R\le%20442)的值置为零。
   
-    5. 在3×3的邻域内进行非最大值抑制，得到的局部最大值点即为图像中的角点。 
+    5. 在3×3的邻域内进行非最大值抑制，若一个非边界点的R值大于其上、下、左、右四点的R值，则该点为局部最大值点，即为图像中的角点。 
 
 5. 提交程序
 
