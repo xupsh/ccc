@@ -1,5 +1,5 @@
-const int SRC_INTERFACE_SZ = 10000; // for cosim
-const int DST_INTERFACE_SZ = 10000; // for cosim
+const int SRC_INTERFACE_SZ = 660000; // for cosim
+const int DST_INTERFACE_SZ = 660000; // for cosim
 
 /**
  *

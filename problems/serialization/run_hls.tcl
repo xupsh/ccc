@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-set XPART "xcu280-fsvh2892-2l-e"
+set XPART xcu280-fsvh2892-2l-e
 set CSIM 1
 set CSYNTH 1
 set COSIM 1
@@ -31,8 +31,12 @@ open_project -reset $PROJ
 
 add_files "top.cpp" -cflags "-I./"
 add_files -tb "test.cpp" -cflags "-I./"
-add_files -tb "data/golden.txt" -cflags "-I./"
-add_files -tb "data/input.obj" -cflags "-I./"
+add_files -tb "data/large/fix.arrow" -cflags "-I./"
+add_files -tb "data/large/fix.obj" -cflags "-I./"
+add_files -tb "data/large/var.arrow" -cflags "-I./"
+add_files -tb "data/large/var.obj" -cflags "-I./"
+add_files -tb "data/large/mix.arrow" -cflags "-I./"
+add_files -tb "data/large/mix.obj" -cflags "-I./"
 
 set_top dut
 
