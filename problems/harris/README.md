@@ -71,7 +71,7 @@
 
         其计算结果记作![](https://render.githubusercontent.com/render/math?math=G_x)和![](https://render.githubusercontent.com/render/math?math=G_y)
         
-    2. 计算图像两个方向梯度的乘积![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)，并对得到的![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)右移6位。
+    2. 计算图像两个方向梯度的乘积![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)，并对得到的![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)均右移6位。
 
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20G_{xy}=G_xG_y">
@@ -83,7 +83,7 @@
        <img src="https://render.githubusercontent.com/render/math?math=\huge%20B=\frac{1}{9}\begin{bmatrix}1%261%261\\1%261%261\\1%261%261\end{bmatrix},">
        </div>
        
-       对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并生成矩阵M。
+       对![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})进行滤波，并对滤波后得到的![](https://render.githubusercontent.com/render/math?math=G_x^2)、![](https://render.githubusercontent.com/render/math?math=G_y^2)和![](https://render.githubusercontent.com/render/math?math=G_{xy})均右移2位，生成矩阵M。
 
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20M=\begin{bmatrix}G_x^2%26G_{xy}\\G_{xy}%26G_y^2\end{bmatrix}">
