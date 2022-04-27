@@ -9,7 +9,7 @@ open_project $Project -reset
 set_top canny
 
 add_files canny.cpp -cflags -I.
-add_files canny.h -cflags -I. 
+add_files canny.hpp -cflags -I. 
 add_files -tb src.txt -cflags -I.
 add_files -tb dst.txt -cflags -I.
 add_files -tb canny_test.cpp -cflags -I.
