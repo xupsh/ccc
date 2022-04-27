@@ -31,12 +31,12 @@ open_project -reset $PROJ
 
 add_files "top.cpp" -cflags "-I./"
 add_files -tb "test.cpp" -cflags "-I./"
-add_files -tb "data/large/fix.arrow" -cflags "-I./"
-add_files -tb "data/large/fix.obj" -cflags "-I./"
-add_files -tb "data/large/var.arrow" -cflags "-I./"
-add_files -tb "data/large/var.obj" -cflags "-I./"
-add_files -tb "data/large/mix.arrow" -cflags "-I./"
-add_files -tb "data/large/mix.obj" -cflags "-I./"
+add_files -tb "data/fix.arrow" -cflags "-I./"
+add_files -tb "data/fix.obj" -cflags "-I./"
+add_files -tb "data/var.arrow" -cflags "-I./"
+add_files -tb "data/var.obj" -cflags "-I./"
+add_files -tb "data/mix.arrow" -cflags "-I./"
+add_files -tb "data/mix.obj" -cflags "-I./"
 
 set_top dut
 
