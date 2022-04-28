@@ -58,7 +58,7 @@
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20\begin{matrix}%200%26255%260%260%260%260%260%260%260%260%260%26255%260%260%260%260\end{matrix}">
     </div>
 
-    本题在使用滤波器前一律进行opencv的BORDER_DEFAULT填充，使得滤波后的图像和滤波前大小一致。
+    **本题在使用滤波器前一律进行opencv的BORDER_DEFAULT填充，使得滤波后的图像和滤波前大小一致。**
 
     关于canny算法本身，以下为算法4个主要步骤的大致介绍：
 
