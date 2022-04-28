@@ -32,25 +32,26 @@ int main()
         fscanf(fpo, "%d", &gold);
         if (output[i] - gold != 0)
         {
-            tf = 1;
+            tf = tf + 1;
         }        
     }
     
     fclose(fp);
     fclose(fpo);
     
-    if (tf == 1)
+    if (tf > 64)
     {
         fprintf(stdout, "*******************************************\n");
         fprintf(stdout, "FAIL: Output DOES NOT match the golden output\n");
         fprintf(stdout, "*******************************************\n");
-        return 1;
+        return tf;
     } 
     else 
     {
         fprintf(stdout, "*******************************************\n");
         fprintf(stdout, "PASS: The output matches the golden output!\n");
         fprintf(stdout, "*******************************************\n");
+        cout << tf;
         return 0;
     }
     
