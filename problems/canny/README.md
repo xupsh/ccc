@@ -77,10 +77,12 @@
     <div align="center">
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20G=\sqrt{G_x^2%2BG_y^2}">
     </div>
-
+    
+    上式中平方为对应元素相乘，不是矩阵乘法。
+    
     3.对梯度强度![](https://render.githubusercontent.com/render/math?math=G)在![](https://render.githubusercontent.com/render/math?math=3\times3)范围内进行非最大值抑制。
 
-    4.使用双阈值法对梯度强度![](https://render.githubusercontent.com/render/math?math=G)进行边界求解，其中阈值上界取80，阈值下界取30。
+    4.使用双阈值法对梯度强度![](https://render.githubusercontent.com/render/math?math=G)进行边界求解，其中阈值上界取80，阈值下界取30。如果边缘像素的梯度值高于高阈值，则将其标记为强边缘像素，直接视为边缘像素；如果边缘像素的梯度值小于高阈值并且大于低阈值，则将其标记为弱边缘像素。通过查看弱边缘像素及其8个邻域像素，只要其中一个为强边缘像素，则该弱边缘点就可以保留为真实的边缘。
 
 5. 提交程序
 
