@@ -80,7 +80,7 @@
     
     上式中平方为对应元素相乘，不是矩阵乘法。
     
-    此外，计算梯度方向![](https://render.githubusercontent.com/render/math?math=theta)
+    此外，计算梯度方向![](https://render.githubusercontent.com/render/math?math=a)
     
     3.对梯度强度![](https://render.githubusercontent.com/render/math?math=G)在![](https://render.githubusercontent.com/render/math?math=3\times3)范围内进行非最大值抑制。
 
