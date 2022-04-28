@@ -71,7 +71,7 @@
 
         其计算结果记作![](https://render.githubusercontent.com/render/math?math=G_x)和![](https://render.githubusercontent.com/render/math?math=G_y)
         
-    2. 计算图像两个方向梯度的乘积（对元素相乘，不是矩阵乘法）![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)，并对得到的![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)均**右移6位**。
+    2. 计算图像两个方向梯度的乘积（对应元素相乘，不是矩阵乘法）![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)，并对得到的![](https://render.githubusercontent.com/render/math?math=G_{xy})，![](https://render.githubusercontent.com/render/math?math=G_x^2)和![](https://render.githubusercontent.com/render/math?math=G_y^2)均**右移6位**。
 
         <div align="center">
         <img src="https://render.githubusercontent.com/render/math?math=\huge%20G_{xy}=G_xG_y">
