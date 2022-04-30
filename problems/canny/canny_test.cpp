@@ -44,7 +44,8 @@ int main()
         fprintf(stdout, "*******************************************\n");
         fprintf(stdout, "FAIL: Output DOES NOT match the golden output\n");
         fprintf(stdout, "*******************************************\n");
-        return tf;
+        cout << tf;
+        return 1;
     } 
     else 
     {
