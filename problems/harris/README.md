@@ -35,7 +35,7 @@
 4. 函数原型
 
     ```c++
-    void fast_accel(DTYPE* img_in, int threshold, DTYPE* img_out, int rows, int cols)
+    void harris(DTYPE* imgSrc, DTYPE* imgDst, double alpha)
     ```
     - `img_in`: 图像输入
     - `img_out`: 图像输出
