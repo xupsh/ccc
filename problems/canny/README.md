@@ -9,7 +9,7 @@
 ├── tcl_script.tcl    //tcl文件
 └── README.md         //说明文件
 ```
-## Canny （最近一次更新：4月30日）
+## Canny （最近一次更新：5月2日）
 
 1. 框架代码说明
 
@@ -44,9 +44,9 @@
 
     在本项目中，输入的图像已经被转化为了一个大小为![](https://render.githubusercontent.com/render/math?math=128\times128)的一维数组。
     输入矩阵是按行展开的。
-    输出矩阵是算法得到的k个特征点在图像中的位置。
-    如果该位置是特征点，则该位置的值为255；如果不是，则该位置的值为0。
-    例如，算法得到的一张![](https://render.githubusercontent.com/render/math?math=4\times4)大小图像的特征点坐标为![](https://render.githubusercontent.com/render/math?math=(0,1))和![](https://render.githubusercontent.com/render/math?math=(2,3))，那么dst应为
+    输出矩阵是算法得到的k个边缘点在图像中的位置。
+    如果该位置是强边缘点，则该位置的值为255；如果该位置是弱边缘点，则该位置的值为127；如果不是，则该位置的值为0。
+    例如，算法得到的一张![](https://render.githubusercontent.com/render/math?math=4\times4)大小图像的强边缘点坐标为![](https://render.githubusercontent.com/render/math?math=(0,1))和![](https://render.githubusercontent.com/render/math?math=(2,3))，那么dst应为
 
     <div align="center">
     <img src="https://render.githubusercontent.com/render/math?math=\huge%20\begin{matrix}%200%26255%260%260\\0%260%260%260\\0%260%260%26255\\0%260%260%260\end{matrix}">
@@ -95,11 +95,7 @@
     如果梯度方向大于-22.5度小于等于22.5度，则比较像素的左边和右边的像素。
     若该像素不大于这两个像素之中的任何一个，则该点被抑制。
 
-    4.使用双阈值法对梯度强度![](https://render.githubusercontent.com/render/math?math=G)进行边界求解，其中高阈值取80，低阈值取30。如果边缘像素的梯度值大于等于高阈值，则将其标记为强边缘像素，直接视为边缘像素；如果边缘像素的梯度值小于高阈值并且大于低阈值，则将其标记为弱边缘像素。通过查看弱边缘像素及其8个邻域像素，只要其中一个为强边缘像素或最终为边缘的弱边缘像素（即开始为弱边缘像素但由于8个邻域像素有强边缘像素而判定为边缘的像素），则该弱边缘像素就可以保留为真实的边缘。最终效果如下图所示：
-
-    <div align="center">
-    <img src="https://github.com/xupsh/ccc/raw/main/problems/canny/images/th.png">
-    </div>
+    4.使用双阈值法对梯度强度![](https://render.githubusercontent.com/render/math?math=G)进行边界求解，其中高阈值取80，低阈值取30。如果边缘像素的梯度值**大于等于**高阈值，则将其标记为强边缘像素，赋值255；如果边缘像素的梯度值**小于**高阈值并且**大于**低阈值，则将其标记为弱边缘像素，赋值127；其余像素赋值0。
 
 5. 提交程序
 
