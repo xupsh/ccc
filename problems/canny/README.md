@@ -37,11 +37,10 @@
     ```c++
     void canny(DTYPE* src, DTYPE* dst, int upperThresh, int lowerThresh);
     ```
-    - `img_in`: 图像输入
-    - `img_out`: 图像输出
-    - `imag_sample`: 阈值
-    - `rows`: 图像长度（行数）
-    - `cols`: 图像宽度（列数）
+    - `src`: 图像输入
+    - `dst`: 图像输出
+    - `upperThresh`: 高阈值
+    - `lowerThresh`: 低阈值
 
     在本项目中，输入的图像已经被转化为了一个大小为![](https://render.githubusercontent.com/render/math?math=128\times128)的一维数组。
     输入矩阵是按行展开的。
@@ -96,7 +95,7 @@
     如果梯度方向大于-22.5度小于等于22.5度，则比较像素的左边和右边的像素。
     若该像素不大于这两个像素之中的任何一个，则该点被抑制。
 
-    4.使用双阈值法对梯度强度![](https://render.githubusercontent.com/render/math?math=G)进行边界求解，其中阈值上界取80，阈值下界取30。如果边缘像素的梯度值高于高阈值，则将其标记为强边缘像素，直接视为边缘像素；如果边缘像素的梯度值小于高阈值并且大于低阈值，则将其标记为弱边缘像素。通过查看弱边缘像素及其8个邻域像素，只要其中一个为强边缘像素或最终为边缘的弱边缘点，则该弱边缘点就可以保留为真实的边缘。最终效果如下图所示：
+    4.使用双阈值法对梯度强度![](https://render.githubusercontent.com/render/math?math=G)进行边界求解，其中高阈值取80，低阈值取30。如果边缘像素的梯度值高于高阈值，则将其标记为强边缘像素，直接视为边缘像素；如果边缘像素的梯度值小于高阈值并且大于低阈值，则将其标记为弱边缘像素。通过查看弱边缘像素及其8个邻域像素，只要其中一个为强边缘像素或最终为边缘的弱边缘点（即开始为弱边缘点但由于8个邻域像素有强边缘像素而判定为边缘的点），则该弱边缘点就可以保留为真实的边缘。最终效果如下图所示：
 
     <div align="center">
     <img src="https://github.com/xupsh/ccc/raw/main/problems/canny/images/th.png">
