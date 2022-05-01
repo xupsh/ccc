@@ -37,11 +37,9 @@
     ```c++
     void harris(DTYPE* imgSrc, DTYPE* imgDst, double alpha)
     ```
-    - `img_in`: 图像输入
-    - `img_out`: 图像输出
-    - `imag_sample`: 阈值
-    - `rows`: 图像长度（行数）
-    - `cols`: 图像宽度（列数）
+    - `imgSrc`: 图像输入
+    - `imgDst`: 图像输出
+    - `alpha`: 响应值计算参数
         
     在本项目中，输入的图像已经被转化为了一个大小为![](https://render.githubusercontent.com/render/math?math=128\times128)的一维数组。
     输入矩阵是按行展开的。
