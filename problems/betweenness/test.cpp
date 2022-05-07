@@ -124,12 +124,15 @@ void betweenness(unsigned numVert, unsigned numEdge, unsigned* offset, unsigned*
         }
         while (!s.empty()) {
             unsigned w = s.top();
+            if (source != w) {
+                btwn[w] = btwn[w] + delta[w];
+            }
             for (std::list<unsigned>::iterator it = p[w].begin(); it != p[w].end(); it++) {
                 unsigned v = *it;
                 delta[v] = delta[v] + (sigma[v] / sigma[w]) * (1 + delta[w]);
-                if (source != w) {
-                    btwn[w] = btwn[w] + delta[w];
-                }
+                //if (source != w) {
+                    //btwn[w] = btwn[w] + delta[w];
+                //}
             }
             s.pop();
         }
@@ -140,8 +143,10 @@ int main(int argc, const char* argv[]) {
     // cmd parser
     ArgParser parser(argc, argv);
 
-    std::string offsetfile = "data-csr-offset.mtx";
-    std::string columnfile = "data-csr-indicesweights.mtx";
+
+
+    std::string offsetfile = "large-csr-offset.mtx";
+    std::string columnfile = "large-csr-indicesweights.mtx";
 
     int err = 0;
 
@@ -232,6 +237,108 @@ int main(int argc, const char* argv[]) {
     }
 
     std::cout << "f936ed83 Top " << cnt << " vertices are the same with golden." << std::endl;
+    if (err != 0)
+    {
+        return err;
+    }
+//return err;
 
-    return err;
+std::string offsetfile1 = "small-csr-offset.mtx";
+    std::string columnfile1 = "small-csr-indicesweights.mtx";
+
+    int err1 = 0;
+
+    char line1[1024] = {0};
+    int index1 = 0;
+
+    int numVertices1;
+    int numEdges1;
+
+    std::fstream offsetfstream1(offsetfile1.c_str(), std::ios::in);
+    if (!offsetfstream1) {
+        std::cout << "Error : " << offsetfile1 << " file doesn't exist !" << std::endl;
+        exit(1);
+    }
+
+    offsetfstream1.getline(line1, sizeof(line1));
+    std::stringstream numOdata1(line1);
+    numOdata1 >> numVertices1;
+
+    unsigned* offset321 = aligned_alloc<unsigned>(INTERFACE_MEMSIZE);
+    while (offsetfstream1.getline(line1, sizeof(line1))) {
+        std::stringstream data1(line1);
+        data1 >> offset321[index1];
+        index1++;
+    }
+
+    std::fstream columnfstream1(columnfile1.c_str(), std::ios::in);
+    if (!columnfstream1) {
+        std::cout << "Error : " << columnfile1 << " file doesn't exist !" << std::endl;
+        exit(1);
+    }
+
+    index1 = 0;
+
+    columnfstream1.getline(line1, sizeof(line1));
+    std::stringstream numCdata1(line1);
+    numCdata1 >> numEdges1;
+
+    unsigned* column321 = aligned_alloc<unsigned>(INTERFACE_MEMSIZE);
+    while (columnfstream1.getline(line1, sizeof(line1))) {
+        std::stringstream data1(line1);
+        data1 >> column321[index1];
+        index1++;
+    }
+
+    float* btwn1 = aligned_alloc<float>(INTERFACE_MEMSIZE);
+    unsigned* tmp01 = aligned_alloc<unsigned>(INTERFACE_MEMSIZE);
+    unsigned* tmp11 = aligned_alloc<unsigned>(INTERFACE_MEMSIZE);
+    unsigned* tmp21 = aligned_alloc<unsigned>(INTERFACE_MEMSIZE);
+    unsigned* tmp31 = aligned_alloc<unsigned>(INTERFACE_MEMSIZE);
+
+    if (INTERFACE_MEMSIZE == 100000) {
+        std::cout << "Warning: using default memory size (100000xsizeof(unsigned)) for tmp0, tmp1, tmp2, tmp3. Define "
+                     "INTERFACE_MEMSIZE in the top.hpp for customize memory size."
+                  << std::endl;
+    }
+    for (int i = 0; i < numVertices1; i++) {
+        btwn1[i] = 0;
+    }
+
+    dut(numVertices1, numEdges1, offset321, column321, btwn1, tmp01, tmp11, tmp21, tmp31);
+    float* btwn_gold1 = aligned_alloc<float>(numVertices1);
+    betweenness(numVertices1, numEdges1, offset321, column321, btwn_gold1);
+
+    std::vector<result> ret1;
+    std::vector<result> golden1;
+    for (int i = 0; i < numVertices1; i++) {
+        result tmp111;
+        tmp111.vertex = i;
+        tmp111.betweenness = btwn1[i];
+        ret1.push_back(tmp111);
+        result tmp_gold1;
+        tmp_gold1.vertex = i;
+        tmp_gold1.betweenness = btwn_gold1[i];
+        golden1.push_back(tmp_gold1);
+    }
+    std::sort(ret1.begin(), ret1.end(), operator>);
+    std::sort(golden1.begin(), golden1.end(), operator>);
+
+    unsigned cnt1 = 0;
+    auto itgold1 = golden1.begin();
+    for (auto itret1 = ret1.begin(); itret1 != ret1.end(); itret1++, itgold1++) {
+        if (itret1->vertex == itgold1->vertex) {
+            cnt1++;
+        } else {
+            break;
+        }
+    }
+
+    std::cout << "f936ed83 Top " << cnt1 << " vertices are the same with golden." << std::endl;
+
+    return err1;
+
+
+    
+
 }
