@@ -30,7 +30,7 @@
   
     •Btwn: the output betweenness for each vertex
     
-    ## FILE FORMAT
+    
 
     ### INPUT *.obj
     File in row-based format like csv is interpreted as a series of data in Object struct. We use file in Object struct format as test input.
