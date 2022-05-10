@@ -8,7 +8,7 @@
 
 2. 项目要求  
 
-![image-20220331102725649](../assets/2.png)
+    ![image-20220331102725649](../assets/2.png)
 
     ### INPUT *.obj
     File in row-based format like csv is interpreted as a series of data in Object struct. We use file in Object struct format as test input.
