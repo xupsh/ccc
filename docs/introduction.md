@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 竞赛介绍
 
 ![](./images/cover2022.jpg)

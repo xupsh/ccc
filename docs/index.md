@@ -1,4 +1,8 @@
-<!--# CCF TCARCH- Customized Computing Challenge!-->
+---
+layout: default
+---
+
+# CCC 定制计算算法实现挑战赛
 
 ![](./images/cover2022.jpg)
 

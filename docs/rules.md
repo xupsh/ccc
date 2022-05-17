@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 竞赛规则
 ![](./images/cover.jpg)
 
