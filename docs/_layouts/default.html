@@ -27,12 +27,12 @@
             <li class="listedpages "><a style="color:white; " href="index.html "><div align="center">首页</div></a></li>
             <li class="listedpages "><a style="color:white; " href="schedule.html "><div align="center">日程安排</div></a> </li>
            
-            <li><label for="btn-4" class="show ">竞赛信息 </label></li>
+            <li><label for="btn-4" class="show "><div align="center">竞赛信息</div></label></li>
             {% for item in site.data.competition_info_sidebar.docs %}
             <li class="listedpages "><a style="color:white; " href="{{ item.url }} "><div align="center">{{ item.title }}</div></a></li>
             {% endfor %}
 
-            <li><label for="btn-4" class="show ">学习资料 </label></li>
+            <li><label for="btn-4" class="show "><div align="center">学习资料</div></label></li>
             {% for item in site.data.resource_sidebar.docs %}
             <li class="listedpages "><a style="color:white; " href="{{ item.url }} "><div align="center">{{ item.title }}</div></a></li>
             {% endfor %}            
