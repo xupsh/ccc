@@ -29,12 +29,12 @@
            
             <li><label for="btn-4" class="show ">竞赛信息 </label></li>
             {% for item in site.data.competition_info_sidebar.docs %}
-            <li class="listedpages "><a style="color:white; " href="{{ item.url }} ">{{ item.title }}</a></li>
+            <li class="listedpages "><a style="color:white; " href="{{ item.url }} "><div align="center">{{ item.title }}</div></a></li>
             {% endfor %}
 
             <li><label for="btn-4" class="show ">学习资料 </label></li>
             {% for item in site.data.resource_sidebar.docs %}
-            <li class="listedpages "><a style="color:white; " href="{{ item.url }} ">{{ item.title }}</a></li>
+            <li class="listedpages "><a style="color:white; " href="{{ item.url }} "><div align="center">{{ item.title }}</div></a></li>
             {% endfor %}            
         </ul>
     </nav>
