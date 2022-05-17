@@ -56,3 +56,5 @@ Vitis HLS 将取代大家可能更为熟悉的Vivado HLS, Vivado HLS 也将止�
 ​                 
 [**更多视频**](https://www.youtube.com/watch?v=T4HaM2QONw8&list=PLRr5m7hDN9TI_TbwWxNuzHUUqR-P1Piq6)
 
+---------------------------------------
+<p align="center">Copyright&copy; 2022 AMD-Xilinx</p>

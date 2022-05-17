@@ -26,3 +26,5 @@ CCC是首次发起的基于HLS的算法到硬件实现编程挑战赛，不仅�
 
 
 
+---------------------------------------
+<p align="center">Copyright&copy; 2022 AMD-Xilinx</p>

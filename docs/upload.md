@@ -62,3 +62,7 @@ layout: default
 - 我的提交中显示选手所有提交的提交历史
 
 ![](./images/help_09.png)
+
+
+---------------------------------------
+<p align="center">Copyright&copy; 2022 AMD-Xilinx</p>
