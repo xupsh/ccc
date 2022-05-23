@@ -56,3 +56,23 @@
     小测试用例占40%分数，大测试用例占60%分数，最终得分按小测试用例得分与大测试用例得分加权相加而得
   
     最终得分 mark=[0.6*(cntbig^4)+0.4*(cntsmall^4)]/time，mark越大对应排名得分越高，若程序运行时间超过1个小时则不计分
+
+5 输出信息参考
+   
+    csim:
+
+    ...
+    f936ed83 Top 3534 vertices are the same with golden.
+    ...
+    f936ed83 Top 1015 vertices are the same with golden.
+
+    
+    cosim:
+    ...
+    f936ed83 Top 0 vertices are the same with golden.
+    ...
+    f936ed83 Top 0 vertices are the same with golden.
+
+    note - syn和cosim阶段，需要添加自行编写的可综合hls代码。(本示例中的top.cpp的可综合部分（line99~line101)仅提供接口模板，请参考line42~line97的非可综合c-model部分给出解答)
+
+    

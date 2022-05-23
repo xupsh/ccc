@@ -232,7 +232,7 @@ int main(int argc, const char* argv[]) {
         if (itret->vertex == itgold->vertex) {
             cnt++;
         } 
-        else if ((itret->betweenness - itgold->betweenness) < 0.1) {
+        else if (std::abs((itret->betweenness - itgold->betweenness)) < 0.1) {
             cnt++;
         }
         else {
@@ -334,7 +334,7 @@ std::string offsetfile1 = "small-csr-offset.mtx";
         if (itret1->vertex == itgold1->vertex) {
             cnt1++;
         } 
-        else if ((itret1->betweenness - itgold1->betweenness) < 0.1) {
+        else if (std::abs((itret1->betweenness - itgold1->betweenness)) < 0.1) {
             cnt1++;
         }
         else {
