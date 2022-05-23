@@ -73,6 +73,10 @@
     ...
     f936ed83 Top 0 vertices are the same with golden.
 
-syn和cosim阶段，需要添加自行编写的可综合hls代码。(本示例中的top.cpp的可综合部分（line99~line101)仅提供接口模板，请参考line42~line97的非可综合c-model部分给出解答)
+syn和cosim阶段，需要添加自行编写的可综合hls代码
+
+本示例中的top.cpp的可综合部分line99 - line101仅提供接口模板
+
+请参考line42 - line97的非可综合c-model部分给出解答
 
     
