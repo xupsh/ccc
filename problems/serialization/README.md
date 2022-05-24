@@ -1,4 +1,6 @@
-## Serialization （最近一次更新：5月10日）
+## Serialization （最近一次更新：5月24日）
+
+**注意：运行run_hls.tcl前需要配置LDFLAGS环境变量，即export LDFLAGS=-L$PWD/arrow_utils/lib64**
 
 1. 框架代码说明
 
