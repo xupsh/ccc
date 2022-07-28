@@ -57,7 +57,7 @@ layout: default
 1.**Graph:** Betweenness
   
   > Betweenness is a graph analysis algorithm. It represents the degree to which nodes stand between each other. For every pair of vertices in a connected graph, there exists at least one shortest path between the vertices such that either the number of edges that the path passes through (for unweighted graphs) or the sum of the weights of the edges (for weighted graphs) is minimized. The betweenness centrality for each vertex is the number of these shortest paths that pass through the vertex.
-  > A reference implementation of the betweenness calculation can be found at: [**reference**](https://gitenterprise.xilinx.com/qianqiao/ccc2021/blob/main/problems/betweenness/test.cpp#L84)
+ 
   >
   > [**Details**](https://github.com/xupsh/ccc/tree/main/problems/betweenness)
 
